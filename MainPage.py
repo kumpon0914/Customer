@@ -27,8 +27,8 @@ html_8 = """
 """
 
 ag=st.slider("กรุณาเลือกข้อมูล Age")
-al_in=st.slider("กรุณาเลือกข้อมูล Annual Income ($)")
-sp_sc=st.number_input("กรุณาเลือกข้อมูล Spending Score (1-100)")
+al_in=st.number_input("กรุณาเลือกข้อมูล Annual Income ($)")
+sp_sc=st.slider("กรุณาเลือกข้อมูล Spending Score (1-100)")
 wk_exp=st.slider("กรุณาเลือกข้อมูล Work Experience")
 fa_si=st.slider("กรุณาเลือกข้อมูล Family Size")
 
