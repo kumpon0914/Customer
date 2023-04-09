@@ -7,3 +7,30 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 st.header('*Kumpon* : *Prediction of flowers*')
+
+html_8 = """
+<div style="background-color:#D5DBDB;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h4>การทำนายข้อมูลดอกไม้</h4></center>
+</div>
+"""
+
+st.markdown(html_8, unsafe_allow_html=True)
+st.markdown("")
+
+dt = pd.read_csv("./Data/Customer.csv")
+st.write(dt.head(100))
+
+dt1 = dt['age'].sum()
+dt2 = dt['annual_Income'].sum()
+dt3 = dt['spending_score'].sum()
+dt4 = dt['work_experience'].sum()
+dt5 = dt['family_size'].sum()
+
+dx = [dt1, dt2, dt3, dt4, dt5]
+dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "d5"])
+if st.button("แสดงการจินตทัศน์ข้อมูล"):
+   #st.write(dt.head(10))
+   st.bar_chart(dx2)
+   st.button("ไม่แสดงข้อมูล")
+else:
+   st.write("ไม่แสดงข้อมูล")
