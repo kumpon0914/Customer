@@ -28,9 +28,9 @@ html_8 = """
 
 ag=st.slider("กรุณาเลือกข้อมูล Age")
 al_in=st.slider("กรุณาเลือกข้อมูล Annual Income ($)")
-sp_sc=st.number_input("กรุณาเลือกข้อมูล Spending Score (1-100)")
-wk_exp=st.number_input("กรุณาเลือกข้อมูล Work Experience")
-fa_si=st.number_input("กรุณาเลือกข้อมูล Family Size")
+sp_sc=st.slider("กรุณาเลือกข้อมูล Spending Score (1-100)")
+wk_exp=st.slider("กรุณาเลือกข้อมูล Work Experience")
+fa_si=st.slider("กรุณาเลือกข้อมูล Family Size")
 
 if st.button("ทำนายผล"):
    
@@ -44,14 +44,24 @@ if st.button("ทำนายผล"):
    
    out=Knn_model.predict(x_input)
 
-   if out[0] == 'Setosa':
+   if out[0] == 'Healthcare':
     st.image("./Pic/Set1.jpg", use_column_width=True)
-   elif out[0] == 'Virginica':
+   elif out[0] == 'Engineer':
     st.image("./Pic/Vir.jpg", use_column_width=True)
-   elif out[0] == 'Versicolor':
+   elif out[0] == 'Lawyer':
     st.image("./Pic/Col.png", use_column_width=True)
-   else:       
-    st.writ('xxx')    
+   elif out[0] == 'Entertainment':       
+    st.image("./Pic/Col.png", use_column_width=True)
+   elif out[0] == 'Artist':       
+    st.image("./Pic/Col.png", use_column_width=True) 
+   elif out[0] == 'Doctor':       
+    st.image("./Pic/Col.png", use_column_width=True)    
+   elif out[0] == 'Homemaker':       
+    st.image("./Pic/Col.png", use_column_width=True)
+   elif out[0] == 'Marketing':       
+    st.image("./Pic/Col.png", use_column_width=True)
+   elif out[0] == 'Executive':       
+    st.image("./Pic/Col.png", use_column_width=True)
    #st.button("ไม่แสดงข้อมูล")
 else:
    st.write("ไม่แสดงข้อมูล")
