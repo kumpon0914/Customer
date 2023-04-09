@@ -31,6 +31,8 @@ with col8:
    st.image("./Pic/Mar.jpg")
 with col9:
    st.image("./Pic/Exc.jpg")
+st.markdown(html_8, unsafe_allow_html=True)
+st.markdown("")
 
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
