@@ -21,8 +21,8 @@ dt = pd.read_csv("./Data/Customer.csv")
 st.write(dt.head(100))
 
 dt1 = dt['Age'].sum()
-dt2 = dt['Annual_Income ($)'].sum()
-dt3 = dt['Spending Score (1-100)'].sum()
+dt2 = dt['Annual_Income'].sum()
+dt3 = dt['Spending Score'].sum()
 dt4 = dt['Work_Experience'].sum()
 dt5 = dt['Family_Size'].sum()
 
