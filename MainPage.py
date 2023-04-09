@@ -24,6 +24,7 @@ html_8 = """
 </div>
 """
 
+ag=st.radio("กรุณาเลือกข้อมูล Gender", ('Male', 'Female'))
 ag=st.slider("กรุณาเลือกข้อมูล Age")
 al_in=st.number_input("กรุณาเลือกข้อมูล Annual Income ($)")
 sp_sc=st.slider("กรุณาเลือกข้อมูล Spending Score (1-100)")
