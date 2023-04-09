@@ -10,7 +10,7 @@ st.header('*Kumpon* : *Prediction of flowers*')
 
 html_8 = """
 <div style="background-color:#D5DBDB;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h4>การทำนายข้อมูลดอกไม้</h4></center>
+<center><h4>การทำนายอาชีพ</h4></center>
 </div>
 """
 
@@ -18,7 +18,7 @@ st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
 dt = pd.read_csv("./Data/Customer.csv")
-st.write(dt.head(100))
+st.write(dt.head(1000))
 
 html_8 = """
 <div style="background-color:#D5DBDB;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
