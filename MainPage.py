@@ -15,7 +15,7 @@ html_8 = """
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
-dt = pd.read_csv("./Data/Customers.csv")
+dt = pd.read_csv("./Data/Customer.csv")
 st.write(dt.head(1000))
 
 html_8 = """
@@ -24,7 +24,6 @@ html_8 = """
 </div>
 """
 
-Gn=st.radio("กรุณาเลือกข้อมูล Gender", ('Male', 'Female'))
 ag=st.slider("กรุณาเลือกข้อมูล Age")
 al_in=st.number_input("กรุณาเลือกข้อมูล Annual Income ($)")
 sp_sc=st.slider("กรุณาเลือกข้อมูล Spending Score (1-100)")
@@ -38,7 +37,7 @@ if st.button("ทำนายผล"):
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)   
 
-   x_input = np.array([[Gn, ag, al_in, sp_sc, wk_exp, fa_si]])
+   x_input = np.array([[ag, al_in, sp_sc, wk_exp, fa_si]])
    st.write(Knn_model.predict(x_input))
    
    out=Knn_model.predict(x_input)
