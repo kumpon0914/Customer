@@ -27,10 +27,10 @@ html_8 = """
 """
 
 ag=st.slider("กรุณาเลือกข้อมูล Age")
-al_in=st.slider("กรุณาเลือกข้อมูล Annual_Income")
-sp_sc=st.number_input("กรุณาเลือกข้อมูล Spending_Score")
-wk_exp=st.number_input("กรุณาเลือกข้อมูล Work_Experience")
-fa_si=st.number_input("กรุณาเลือกข้อมูล Family_Size")
+al_in=st.slider("กรุณาเลือกข้อมูล Annual Income ($)")
+sp_sc=st.number_input("กรุณาเลือกข้อมูล Spending Score (1-100)")
+wk_exp=st.number_input("กรุณาเลือกข้อมูล Work Experience")
+fa_si=st.number_input("กรุณาเลือกข้อมูล Family Size")
 
 if st.button("ทำนายผล"):
    
