@@ -45,23 +45,23 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0] == 'Healthcare':
-    st.image("./Pic/Set1.jpg", use_column_width=True)
+    st.image("./Pic/Hel.png", use_column_width=True)
    elif out[0] == 'Engineer':
-    st.image("./Pic/Vir.jpg", use_column_width=True)
+    st.image("./Pic/Eng.png", use_column_width=True)
    elif out[0] == 'Lawyer':
-    st.image("./Pic/Col.png", use_column_width=True)
+    st.image("./Pic/Law.png", use_column_width=True)
    elif out[0] == 'Entertainment':       
-    st.image("./Pic/Col.png", use_column_width=True)
+    st.image("./Pic/Ent.png", use_column_width=True)
    elif out[0] == 'Artist':       
-    st.image("./Pic/Col.png", use_column_width=True) 
+    st.image("./Pic/Art.jpg", use_column_width=True) 
    elif out[0] == 'Doctor':       
-    st.image("./Pic/Col.png", use_column_width=True)    
+    st.image("./Pic/Doc.png", use_column_width=True)    
    elif out[0] == 'Homemaker':       
-    st.image("./Pic/Col.png", use_column_width=True)
+    st.image("./Pic/Hom.jpg", use_column_width=True)
    elif out[0] == 'Marketing':       
-    st.image("./Pic/Col.png", use_column_width=True)
+    st.image("./Pic/Mar.jpg", use_column_width=True)
    elif out[0] == 'Executive':       
-    st.image("./Pic/Col.png", use_column_width=True)
+    st.image("./Pic/Exc.jpg", use_column_width=True)
    #st.button("ไม่แสดงข้อมูล")
 else:
    st.write("ไม่แสดงข้อมูล")
